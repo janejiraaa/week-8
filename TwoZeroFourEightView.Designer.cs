@@ -1,6 +1,6 @@
 ﻿namespace twozerofoureight
 {
-    partial class TwoZeroFourEightView
+    partial class lblScore
     {
         /// <summary>
         /// Required designer variable.
@@ -293,7 +293,7 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "Score : ";
             // 
-            // TwoZeroFourEightView
+            // lblScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -320,7 +320,7 @@
             this.Controls.Add(this.lbl02);
             this.Controls.Add(this.lbl01);
             this.Controls.Add(this.lbl00);
-            this.Name = "TwoZeroFourEightView";
+            this.Name = "lblScore";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,12 +10,14 @@ using System.Windows.Forms;
 
 namespace twozerofoureight
 {
-    public partial class TwoZeroFourEightView : Form, View
+    public partial class lblScore : Form, View
     {
         Model model;
         Controller controller;
+
+        TwoZeroFourEightScoreView fs = new TwoZeroFourEightScoreView();
        
-        public TwoZeroFourEightView()
+        public lblScore()
         {
             InitializeComponent();
             model = new TwoZeroFourEightModel();
@@ -39,7 +41,10 @@ namespace twozerofoureight
                     sum = sum + board[i, j];
                 }
             }
+            fs.temp_score(sum);
+            fs.Show();
             label1.Text = Convert.ToString(sum);
+            
         }
 
         private void UpdateTile(Label l, int i)

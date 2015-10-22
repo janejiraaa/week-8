@@ -12,6 +12,7 @@ namespace twozerofoureight
         protected int[,] board;
         protected Random rand;
 
+
         public TwoZeroFourEightModel() : this(4)
         {
             // default board size is 4 
