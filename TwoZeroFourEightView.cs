@@ -30,20 +30,16 @@ namespace twozerofoureight
         public void Notify(Model m)
         {
             UpdateBoard(((TwoZeroFourEightModel) m).GetBoard());
-            UpdateScore(((TwoZeroFourEightModel) m).GetBoard());
+            UpdateScore(((TwoZeroFourEightModel) m).GetScore());
         }
 
-        private void UpdateScore(int[,] board) {
-            int sum = 0;
-            for (int i = 0; i < 4; i++) {
-                for (int j = 0; j < 4; j++) {
-                    //board[i, j];
-                    sum = sum + board[i, j];
-                }
-            }
-            fs.temp_score(sum);
+        
+
+        private void UpdateScore(int score) {
+            
+            fs.temp_score(score);
             fs.Show();
-            label1.Text = Convert.ToString(sum);
+            label1.Text = Convert.ToString(score);
             
         }
 
